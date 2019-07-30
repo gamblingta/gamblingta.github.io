@@ -1,0 +1,155 @@
+span.voice {
+	color: #2c7ce8;
+    border: 1px solid #2c7ce8;
+    border-radius: 50px;
+    padding: 1px 7px;
+    margin: 2px;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "Helvetica";
+}
+
+span.admin {
+	color: #c42b2b;
+    border: 1px solid #c42b2b;
+    border-radius: 50px;
+    padding: 1px 7px;
+    margin: 2px;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "Helvetica";
+}
+
+span.cmd {
+	color: #9b2bc4;
+    border: 1px solid #9b2bc4;
+    border-radius: 50px;
+    padding: 1px 7px;
+    margin: 2px;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "Helvetica";
+}
+
+span.com {
+	color: #000000;
+    border: 1px solid #000000;
+    border-radius: 50px;
+    padding: 1px 7px;
+    margin: 2px;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "Helvetica";
+}
+
+span.embed {
+	color: #389a43;
+    border: 1px solid #389a43;
+    border-radius: 50px;
+    padding: 1px 7px;
+    margin: 2px;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "Helvetica";
+}
+
+span.com_invert {
+	color: #dedede;
+    border: 1px solid #dedede;
+    border-radius: 50px;
+    padding: 1px 7px;
+    margin: 2px;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "Helvetica";
+}
+
+span.music {
+	color: red;
+    border: 1px solid red;
+    border-radius: 50px;
+    padding: 1px 7px;
+    margin: 2px;
+	text-decoration: none;
+	font-size: 12px;
+	font-family: "Helvetica";
+}
+
+li.com_li {
+    background: #f5c400;
+}
+
+li.yui_li {
+    background: url(img/yui.png) 50% 50%;
+    background-size: auto 100%;
+}
+
+li.pancake_li {
+    background: #282828;
+}
+
+li.mcount_li {
+    background: #76c2af;
+}
+
+li.statbot_li {
+    background: #1a1a28;
+}
+
+li.mee6_li {
+    background: #60d1f6;
+}
+
+li.pancake_li p, li.statbot_li p {
+    color: #dedede!important;
+}
+
+input[type=text] {
+	position: relative;
+	padding: 15px 40px 15px 20px;
+	width: 300px;
+	color: #525252;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 5px 0px 0px 5px;
+	background: linear-gradient(to right, #FFFFFF 0%, #464747 #F9F9F9 100%);
+	transition: width 0.4s ease;
+	outline: none;
+}
+
+input[type=text]:focus {
+	width: 300px;
+}
+
+.container button {
+	position: relative;
+	padding: 15px 15px 15px 15px;
+	color: #6d6d6d;
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 100;
+	letter-spacing: 2px;
+	border: none;
+	border-radius: 0px 5px 5px 0px;
+	border-left: 1px solid #efefef;
+	background: linear-gradient(to right, #F9F9F9 0%, #464747 #F9F9F9 100%);
+	transition: width 0.4s ease;
+	outline: none;
+}
+
+.container button:hover {
+	color: #985050;
+}
+
+ul#wrapper {
+	list-style: none;
+	margin-top: 50px;
+	text-align: center;
+}
+
+.logo {
+    width: 200px;
+}

@@ -1,0 +1,8 @@
+body {
+    background: url('../img/header.jpg') top center;
+    background-size: 100% auto;
+    width: 100%;
+    background-color: #000;
+    width: 100%;
+    background-attachment: fixed;
+}
