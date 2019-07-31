@@ -228,7 +228,112 @@
 
               <section id="section-4" class="my-5">
                 <h2 class="section-title">Jouer comme un pro <a data-scroll href="#section-4" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
-                  <p>WIP</p>
+                  <p>Avant toute chose, il convient de faire le point sur les mots importants et leurs définitions puisque nous les utiliserons jusqu'à la fin de ce tutoriel!</p>
+                  
+                  
+                  <h5>Les termes techniques</h5>
+                  <a class="topic boxed">
+  <span class="topic-label bg-green"></span>
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <h4 class="topic-title">Hit</h4>
+    </div>
+    <div class="col">
+      <time class="small text-muted">Demande une nouvelle carte.</time>
+    </div>
+  </div>
+</a>
+                  
+                  
+                  <a class="topic boxed">
+  <span class="topic-label bg-orange"></span>
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <h4 class="topic-title">Stand</h4>
+    </div>
+    <div class="col">
+      <time class="small text-muted">Garder sa main telle quelle.</time>
+    </div>
+  </div>
+</a>
+                  
+                  
+                  <a class="topic boxed">
+  <span class="topic-label bg-red"></span>
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <h4 class="topic-title">Double</h4>
+    </div>
+    <div class="col">
+      <time class="small text-muted">Doubler sa mise en échange d'une seule nouvelle carte.</time>
+      </div>
+  </div>
+</a>
+                  
+                  
+                  <a class="topic boxed">
+  <span class="topic-label bg-purple"></span>
+  <div class="row align-items-center">
+    <div class="col-md-7">
+      <h4 class="topic-title">Split</h4>
+    </div>
+    <div class="col">
+      <time class="small text-muted">Séparer sa main lorsqu'on commence le tirage avec 2 cartes de même valeur.</time>
+    </div>
+  </div>
+</a>
+            
+                  <br>
+                  <p>Étant donné que les 4 jeux de cartes sont mélangés à chaque nouvelle main, il ne nous sera pas possible de <i>compter les cartes</i>. Nous allons donc essayer d'estimer nos chances de victoire via des <a href="#section-6" class="external">probabilités</a>. La clé de la réussite va résider dans votre chance et votre capacité à croire ou non en votre main et/ou celle de votre croupier.</p>
+                  
+  <p>La mise d'assurance n'est pas disponible dans le blackjack sur GTA. Si le croupier possède un 10, une figure ou un AS, il va regarder sa deuxième carte. S'il ne la retourne pas <b>immédiatement</b>, cela signifie <b>obligatoirement</b> que sa main est strictement inférieure à 21 ; vous avez donc une chance supplémentaire de le battre !</p>            <div class="component-info">
+                      <p>Sachez également que le croupier a autant de chance que vous de bust. Pensez donc à regarder le tableau <a href="#myChart1" class="external">des chances de sauter</a>.</p>
+                  
+</div><br>
+                  <p>Le croupier ne doit pas dépasser 21, mais des règles s'appliquent en plus. S'il obtient un score de 17, il ne tirera plus de carte. A contrario, s'il est à 16, il tirera encore une carte. Il a alors 62% de chance de bust !</p>
+                  
+                  <p>Nous partons donc du principe qu'il faut atteindre au minimum 17 (18 dans l'idéal) et ne jamais dépasser 21. On conseil donc de tirer des cartes jusqu'à atteindre les 50% de chance de bust (ou un peu moins), soit une main de 14. Cela signifie que vous devez piocher une carte à 14 !</p>
+                  
+                  <p>Si vous fonds sont limités, nous vous conseillons de vous arrêter à 14 mais de piocher à 13 (39% de chance de bust).</p>
+                  
+                  <p>Enfin, si vous avez une main entre 8 et 11, <b class="text-red">doublez</b> votre mise, vous aurez de grandes chances de gagner.</p>
+                  
+                  <p>Voici ci-dessous un exemple d'actions à effectuer en situations réelles !</p>
+                  
+                                    <table class="table text-center table-dark">
+  <thead>
+  <tbody>
+    <tr>
+      <th rowspan="2">MAIN</th>
+      <th colspan="9">CARTE DU DEALER</th>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>A</td>
+    </tr>
+  </thead>
+    <tr>
+      <th></th>
+      <td>2</td>
+      <td>3</td>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+      <td>10</td>
+      <td>A</td>
+    </tr>
+                                        </tbody></table>
               </section>
 
 
@@ -418,7 +523,7 @@
               <section id="section-6" class="my-5">
                 <h2 class="section-title">Les Probabilités <a data-scroll href="#section-6" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
                   <p>WIP</p>
-<canvas id="myChart"></canvas>
+<canvas id="myChart1"></canvas>
 
 
                   
@@ -448,7 +553,18 @@
     <!-- / sidebar layout -->
 
 
-    <!-- / interpost -->
+<section class="bg-dark text-white separator-bottom p-0">
+      <div class="container">
+        <div class="row gutter-0">
+          <div class="col-12 col-md-6">
+            <h4 class="interpost interpost-prev"><a href="">Glitch Zone</a></h4>
+          </div>
+          <div class="col-12 col-md-6 text-right">
+            <h4 class="interpost interpost-next"><a href="">Poker à 3 cartes</a></h4>
+          </div>
+        </div>
+      </div>
+    </section>
 
       
         <!-- footer -->
@@ -474,7 +590,7 @@
     <script src="assets/js/app.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
       <script js>
-      var ctx = document.getElementById('myChart').getContext('2d');
+      var ctx = document.getElementById('myChart1').getContext('2d');
 var chart = new Chart(ctx, {
     // The type of chart we want to create
     type: 'line',
