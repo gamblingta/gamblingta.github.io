@@ -131,5 +131,126 @@ poker-card:nth-child(5) {
 }
 
 .table th, .table td {
-    padding: .5rem .5rem!important;
+    padding: .5rem .5rem;
+}
+
+th.topmaincell {
+    vertical-align: middle!important;
+    transform: rotate(-45deg)
+}
+
+.table th.colmaincell {
+    border-top: 0px solid #000!important;
+    border-right: 1px solid #242424;
+    width: 17%;
+}
+
+.table th.noborder {
+    border-top: 0px solid #000!important;
+}
+
+.table th.squareft {
+    width:8.3%;
+}
+
+.table td.lastcell {
+    border-radius: 0rem 0rem 0.25rem 0rem
+}
+
+.PKRhit {
+    background-color: #c3e6cb;
+    color: #0e3c19;
+    border-top: 0px solid #000!important;
+}
+
+.PKRstand {
+    background-color: #f5c6cb;
+    color: #4f1319;
+    border-top: 0px solid #000!important;
+}
+
+.PKRstand4 {
+    background-color: #ce7d86;
+    color: #4f1319;
+    border-top: 0px solid #000!important;
+}
+
+.PKRstand5 {
+    background-color: #9f5b62;
+    color: #4f1319;
+    border-top: 0px solid #000!important;
+}
+
+.PKRsplit {
+    background-color: #ffeeba;
+    color: #5c4503;
+    border-top: 0px solid #000!important;
+}
+
+.PKRdouble {
+    background-color: #bee5eb;
+    color: #083a42;
+    border-top: 0px solid #000!important;
+}
+
+.PKRdouble4 {
+    background-color: #3da9ba;
+    color: #083a42;
+    border-top: 0px solid #000!important;
+}
+
+.PKRcontenthit::before {
+    content: 'H';
+}
+.PKRcontenthit.active::before {
+    background-color: #c3e6cb!important;
+    color: #0e3c19!important;
+}
+
+.PKRcontentstand::before {
+    content: 'St';
+}
+.PKRcontentstand.active::before {
+    background-color: #f5c6cb!important;
+    color: #4f1319!important;
+}
+
+.PKRcontentstand4::before {
+    content: 'S4';
+}
+.PKRcontentstand4.active::before {
+    background-color: #ce7d86!important;
+    color: #4f1319!important;
+}
+
+.PKRcontentstand5::before {
+    content: 'S5';
+}
+.PKRcontentstand5.active::before {
+    background-color: #9f5b62!important;
+    color: #4f1319!important;
+}
+
+.PKRcontentsplit::before {
+    content: 'Sp';
+}
+.PKRcontentsplit.active::before {
+    background-color: #ffeeba!important;
+    color: #5c4503!important;
+}
+
+.PKRcontentdouble::before {
+    content: 'D';
+}
+.PKRcontentdouble.active::before {
+    background-color: #bee5eb!important;
+    color: #083a42!important;
+}
+
+.PKRcontentdouble4::before {
+    content: 'D4';
+}
+.PKRcontentdouble4.active::before {
+    background-color: #3da9ba!important;
+    color: #083a42!important;
 }

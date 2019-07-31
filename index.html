@@ -84,9 +84,6 @@
                 <li class="nav-item">
                   <a data-scroll class="nav-link" href="#section-6">Les probabilités</a>
                 </li>
-                <li class="nav-item">
-                  <a data-scroll class="nav-link" href="#section-7">Compter les cartes</a>
-                </li>
               </ul>
 
 
@@ -230,60 +227,6 @@
                 <h2 class="section-title">Jouer comme un pro <a data-scroll href="#section-4" class="anchor" data-toggle="tooltip" data-placement="top" title="Copy URL"></a></h2>
                   <p>Avant toute chose, il convient de faire le point sur les mots importants et leurs définitions puisque nous les utiliserons jusqu'à la fin de ce tutoriel!</p>
                   
-                  
-                  <h5>Les termes techniques</h5>
-                  <a class="topic boxed">
-  <span class="topic-label bg-green"></span>
-  <div class="row align-items-center">
-    <div class="col-md-7">
-      <h4 class="topic-title">Hit</h4>
-    </div>
-    <div class="col">
-      <time class="small text-muted">Demande une nouvelle carte.</time>
-    </div>
-  </div>
-</a>
-                  
-                  
-                  <a class="topic boxed">
-  <span class="topic-label bg-orange"></span>
-  <div class="row align-items-center">
-    <div class="col-md-7">
-      <h4 class="topic-title">Stand</h4>
-    </div>
-    <div class="col">
-      <time class="small text-muted">Garder sa main telle quelle.</time>
-    </div>
-  </div>
-</a>
-                  
-                  
-                  <a class="topic boxed">
-  <span class="topic-label bg-red"></span>
-  <div class="row align-items-center">
-    <div class="col-md-7">
-      <h4 class="topic-title">Double</h4>
-    </div>
-    <div class="col">
-      <time class="small text-muted">Doubler sa mise en échange d'une seule nouvelle carte.</time>
-      </div>
-  </div>
-</a>
-                  
-                  
-                  <a class="topic boxed">
-  <span class="topic-label bg-purple"></span>
-  <div class="row align-items-center">
-    <div class="col-md-7">
-      <h4 class="topic-title">Split</h4>
-    </div>
-    <div class="col">
-      <time class="small text-muted">Séparer sa main lorsqu'on commence le tirage avec 2 cartes de même valeur.</time>
-    </div>
-  </div>
-</a>
-            
-                  <br>
                   <p>Étant donné que les 4 jeux de cartes sont mélangés à chaque nouvelle main, il ne nous sera pas possible de <i>compter les cartes</i>. Nous allons donc essayer d'estimer nos chances de victoire via des <a href="#section-6" class="external">probabilités</a>. La clé de la réussite va résider dans votre chance et votre capacité à croire ou non en votre main et/ou celle de votre croupier.</p>
                   
   <p>La mise d'assurance n'est pas disponible dans le blackjack sur GTA. Si le croupier possède un 10, une figure ou un AS, il va regarder sa deuxième carte. S'il ne la retourne pas <b>immédiatement</b>, cela signifie <b>obligatoirement</b> que sa main est strictement inférieure à 21 ; vous avez donc une chance supplémentaire de le battre !</p>            <div class="component-info">
@@ -298,43 +241,561 @@
                   
                   <p>Enfin, si vous avez une main entre 8 et 11, <b class="text-red">doublez</b> votre mise, vous aurez de grandes chances de gagner.</p>
                   
-                  <p>Voici ci-dessous un exemple d'actions à effectuer en situations réelles !</p>
+                  <p>Voici ci-dessous un exemple d'actions à effectuer en situation réelle !</p>
                   
                                     <table class="table text-center table-dark">
-  <thead>
+  
   <tbody>
+      <thead>
     <tr>
-      <th rowspan="2">MAIN</th>
+      <th rowspan="2" class="topmaincell colmaincell">MAIN</th>
       <th colspan="9">CARTE DU DEALER</th>
     </tr>
     <tr>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-      <td>10</td>
-      <td>A</td>
+      <th class="squareft">2</th>
+      <th class="squareft">3</th>
+      <th class="squareft">4</th>
+      <th class="squareft">5</th>
+      <th class="squareft">6</th>
+      <th class="squareft">7</th>
+      <th class="squareft">8</th>
+      <th class="squareft">9</th>
+      <th class="squareft">10</th>
+      <th class="squareft">A</th>
     </tr>
   </thead>
     <tr>
-      <th></th>
-      <td>2</td>
-      <td>3</td>
-      <td>4</td>
-      <td>5</td>
-      <td>6</td>
-      <td>7</td>
-      <td>8</td>
-      <td>9</td>
-      <td>10</td>
-      <td>A</td>
+      <th class="colmaincell">5 à 7</th>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">8</th>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">9</th>
+      <td class="PKRhit">H</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">10</th>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">11</th>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">12</th>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    <td class="PKRstand4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 4 cartes, Hit si vous en avez 5">S4</td>
+    <td class="PKRstand4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 4 cartes, Hit si vous en avez 5">S4</td>
+    <td class="PKRstand4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 4 cartes, Hit si vous en avez 5">S4</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">13</th>
+    <td class="PKRstand4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 4 cartes, Hit si vous en avez 5">S4</td>
+    <td class="PKRstand4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 4 cartes, Hit si vous en avez 5">S4</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">14</th>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">15</th>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">16</th>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">17</th>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">18 à 21</th>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand">St</td>
+<td class="PKRstand lastcell">St</td>
     </tr>
                                         </tbody></table>
+                  
+                  
+                  
+                  
+                                    <table class="table text-center table-dark">
+  
+  <tbody>
+
+    <tr>
+      <th class="colmaincell">A 2</th>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">A 3</th>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">A 4</th>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">A 5</th>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">A 6</th>
+      <td class="PKRhit">H</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+<td class="PKRdouble">D</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">A 7</th>
+    <td class="PKRstand4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 4 cartes, Hit si vous en avez 5">S4</td>
+<td class="PKRdouble4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Doublez si c'est possible, sinon restez si vous avez entre 2 et 4 cartes">D4</td>
+<td class="PKRdouble4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Doublez si c'est possible, sinon restez si vous avez entre 2 et 4 cartes">D4</td>
+<td class="PKRdouble4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Doublez si c'est possible, sinon restez si vous avez entre 2 et 4 cartes">D4</td>
+<td class="PKRdouble4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Doublez si c'est possible, sinon restez si vous avez entre 2 et 4 cartes">D4</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 4 cartes, Hit si vous en avez 5">S4</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">A 8</th>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand4" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 4 cartes, Hit si vous en avez 5">S4</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">A 9</th>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">A 10</th>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    <td class="PKRstand5 lastcell" data-toggle="tooltip" data-placement="top" title="" data-original-title="Stand entre 2 et 5 cartes, Hit si vous en avez 6">S5</td>
+    </tr>
+      
+                                        </tbody></table>
+                  
+                  
+                  <table class="table text-center table-dark">
+  
+  <tbody>
+
+    <tr>
+      <th class="colmaincell">2 2</th>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">3 3</th>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">4 4</th>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">5 5</th>
+      <td class="PKRdouble">D</td>
+      <td class="PKRdouble">D</td>
+      <td class="PKRdouble">D</td>
+      <td class="PKRdouble">D</td>
+      <td class="PKRdouble">D</td>
+      <td class="PKRdouble">D</td>
+      <td class="PKRdouble">D</td>
+      <td class="PKRdouble">D</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">6 6</th>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">7 7</th>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+      <td class="PKRhit">H</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">8 8</th>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">9 9</th>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRstand">St</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRstand">St</td>
+      <td class="PKRstand">St</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">10 10</th>
+      <td class="PKRstand">St</td>
+      <td class="PKRstand">St</td>
+      <td class="PKRstand">St</td>
+      <td class="PKRstand">St</td>
+      <td class="PKRstand">St</td>
+      <td class="PKRstand">St</td>
+      <td class="PKRstand">St</td>
+      <td class="PKRstand">St</td>
+      <td class="PKRstand">St</td>
+      <td class="PKRstand">St</td>
+    </tr>
+    <tr>
+      <th class="colmaincell">A A</th>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+      <td class="PKRsplit">Sp</td>
+    </tr>
+      
+                      </tbody></table>
+              
+<div class="accordion accordion-list" id="accordionExample">
+  <div class="card active PKRcontenthit">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Hit
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+      <div class="card-body">
+        Demander une nouvelle carte.
+      </div>
+    </div>
+  </div>
+  <div class="card PKRcontentstand">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Stand
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+      <div class="card-body">
+        Rester sur votre main actuelle.
+      </div>
+    </div>
+  </div>
+  <div class="card PKRcontentstand4">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Stand on 4
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+      <div class="card-body">
+        Rester sur votre main actuelle <b>si</b> vous avez 4 cartes <b>maximum</b>.<br><br>
+        
+          Demandez une nouvelle carte si vous en avez 5.
+      </div>
+    </div>
+  </div>
+  <div class="card PKRcontentstand5">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Stand on 5
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+      <div class="card-body">
+        Rester sur votre main actuelle <b>si</b> vous avez 5 cartes <b>maximum</b>.<br><br>
+        
+          Demandez une nouvelle carte si vous en avez 6.
+      </div>
+    </div>
+  </div>
+  <div class="card PKRcontentsplit">
+    <div class="card-header" id="headingFive">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Split
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+      <div class="card-body">
+        Partagez votre main en 2. Cela vous donnera donc 2 nouvelles mains. La mise est identique sur la nouvelle main créée.
+      </div>
+    </div>
+  </div>
+  <div class="card PKRcontentdouble">
+    <div class="card-header" id="headingSix">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+          Doubler
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordionExample">
+      <div class="card-body">
+        Doubler votre mise en échange d'une seule carte. Si vous ne pouvez pas doubler, demander une nouvelle carte.
+      </div>
+    </div>
+  </div>
+  <div class="card PKRcontentdouble4">
+    <div class="card-header" id="headingSeven">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+          Doubler
+        </button>
+      </h5>
+    </div>
+    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordionExample">
+      <div class="card-body">
+        Doubler votre mise en échange d'une seule carte. Si vous ne pouvez pas doubler, demander une nouvelle carte <b>seulement</b> si vous avez 5 cartes.
+      </div>
+    </div>
+  </div>
+</div>
+                  
               </section>
+
+                
 
 
               <section id="section-5" class="my-5">

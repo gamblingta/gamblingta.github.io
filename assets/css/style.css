@@ -13284,7 +13284,6 @@ article > section > .row {
       -webkit-transition-delay: 0s;
       -moz-transition-delay: 0s;
       transition-delay: 0s;
-      content: counter(accordion, decimal);
       position: absolute;
       display: block;
       top: 50%;
